@@ -1,10 +1,10 @@
-import '../styles/Navigation'
+import '../styles/Navigation.css'
 function Navigation() {
     return (
         <div className="header-nav">
-            <ul>
-                <li>A propos</li>
-                <li>Accueil</li>
+            <ul className="header-nav--list">
+                <li className='header-nav--li'>A propos</li>
+                <li className='header-nav--li'>Accueil</li>
             </ul>
         </div>
 
