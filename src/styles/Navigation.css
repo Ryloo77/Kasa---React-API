@@ -1,9 +1,7 @@
 .header-nav--list {
-    position: absolute;
     width: 309px;
     height: 34px;
     top: 17px;
-    left: 931px;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -12,8 +10,9 @@
 .header-nav--li{
     font-family: 'Montserrat';
     font-weight: 500;
+    font-size: 24px;
     color: #FF6060;
     display: flex;
     text-align: right;
-    text-decoration : none;
+    text-decoration: none;
 }

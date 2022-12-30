@@ -1,0 +1,8 @@
+.cardlist{
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+}

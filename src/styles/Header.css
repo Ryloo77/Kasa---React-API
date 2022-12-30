@@ -1,9 +1,13 @@
 .header {
+    margin: auto;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    width: 1240px;
+    max-width: 1240px;
     height: 68px;
-    top: 40px;
-    left: 100px;
 }
 
+.header-logo{
+    width: 210.32px;
+    height: 68px;
+}
