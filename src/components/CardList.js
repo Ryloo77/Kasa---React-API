@@ -1,13 +1,19 @@
 import '../styles/Cardlist.css'
 import Card from './Card'
 import {products} from '../models/Products'
+import { Link } from 'react-router-dom'
+
 
 function CardList () {
+
      return (
         <main className="cardlist">
         {products.map((product) => {
            return (
-               < Card key={product.id} title={product.title} cover={product.cover}/>
+            <Link to={`/fiche_logement/${product.id}`}>
+               <Card key={product.id} title={product.title} cover={product.cover}/>
+            </Link>
+               
             )  
         })}
         </main>

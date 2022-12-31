@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 import '../styles/Navigation.css'
 function Navigation() {
     return (
         <div className="header-nav">
             <ul className="header-nav--list">
-                <li className='header-nav--li'>Accueil</li>
-                <li className='header-nav--li'>A propos</li>
+                <li ><Link className='header-nav--li'to="/">Accueil</Link></li>
+                <li ><Link className='header-nav--li'to="">A propos</Link></li>
             </ul>
         </div>
 
