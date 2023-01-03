@@ -1,17 +1,14 @@
 import React from 'react'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import SingleCard from '../components/SingleCard'
+import '../styles/Logement.css'
+import FicheLogement from '../components/logement/FicheLogement'
 
 
 function Logement (){
 
     return (
-        <>        
-        <Header/>
-        <SingleCard/>
-        <Footer/>
-        </>
+        <div className='logement'>        
+        <FicheLogement/>
+        </div>
 
     )
 }

@@ -1,13 +1,12 @@
-.header-nav--list {
+.header-nav {
     width: 309px;
     height: 34px;
     top: 17px;
     display: flex;
-    list-style: none;
     justify-content: space-around;
 }
 
-.header-nav--li{
+.header-nav--link{
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 24px;
@@ -15,4 +14,8 @@
     display: flex;
     text-align: right;
     text-decoration: none;
+}
+
+.header-nav--link:hover{
+    text-decoration: underline;
 }

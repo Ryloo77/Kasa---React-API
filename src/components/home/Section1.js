@@ -1,5 +1,5 @@
-import sectionImg from '../assets/sectionImg.png'
-import '../styles/Section1.css'
+import sectionImg from '../../assets/sectionImg.png'
+import '../../styles/Section1.css'
 function LogoCardList () {
     return (
         <div className='section1'>

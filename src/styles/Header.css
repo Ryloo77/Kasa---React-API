@@ -1,8 +1,8 @@
 .header {
-    margin: auto;
-    margin-top: 40px;
+    margin: 40px auto 63px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 1240px;
     height: 68px;
 }
