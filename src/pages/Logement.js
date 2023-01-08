@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Logement.css'
+import '../styles/logement/Logement.css'
 import FicheLogement from '../components/logement/FicheLogement'
 
 

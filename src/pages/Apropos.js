@@ -1,7 +1,14 @@
+import Collaps from '../components/apropos/Collaps'
+import Montain from '../components/apropos/moutainImg'
+
 function Apropos () {
     
     return (
-        <div>Apropos</div>
+        <> 
+        <Montain/>
+        <Collaps/>
+        </>
+       
     )
 }
 

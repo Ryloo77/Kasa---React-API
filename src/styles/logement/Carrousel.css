@@ -1,0 +1,47 @@
+.conteneur{
+    display: flex;
+    width: 1240px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 25px;
+}
+
+.carrousel-btn--G{
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    position: absolute;
+    z-index: 2;
+    top:157px;
+    left:10px;
+    opacity: 0.2;
+    transition: all 1s;
+}
+.carrousel-btn--G:hover{
+    opacity: 1;
+    transition: all 1s;
+    }
+
+.carrousel-btn--D{
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 2;
+    top:157px;
+    right:10px;
+    opacity: 0.2;
+    transition: all 1s;
+}
+
+.carrousel-btn--D:hover{
+    opacity: 1;
+    transition: all 1s;
+    }
+
+.carrousel-img {
+    min-width: 1240px;
+    height: 415px;
+    object-fit: cover;
+    overflow: hidden;
+    z-index: 0;
+}

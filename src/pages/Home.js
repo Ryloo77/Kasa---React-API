@@ -1,6 +1,6 @@
 import CardList from '../components/home/CardList'
 import Session1 from'../components/home/Section1'
-import '../styles/Home.css'
+import '../styles/home/Home.css'
 
 function Home () {
     return (

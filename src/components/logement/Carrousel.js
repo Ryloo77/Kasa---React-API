@@ -1,20 +1,29 @@
 import PropsCarr from './PropsCarr'
+import vector from '../../assets/vector.png'
+import ClickG from './AnimationCarr'
 import {products} from '../../models/Products'
-import '../../styles/Carrousel.css'
+import '../../styles/logement/Carrousel.css'
 import { useParams } from 'react-router-dom'
 
 
 
-function Carroussel() {
+function Carrousel() {
     //useParams pour récupérer l'id du produit dans le params
     const {productId} = useParams()
     //récupération du produit appelé égal à l'id du "params"
     const product = products.find((product) => product.id === productId)
     return (
-        <div className="carrousel">
-        {product.pictures.map((picture) => {
+
+        <div className='conteneur'>
+        {product.pictures.map((picture, index) => {
          return (
-            <PropsCarr picture={[picture]}/>
+            <div  key={product.id + index} className='carrousel'>
+            <PropsCarr  picture={picture}/>
+            <button className='carrousel-btn--G'><img src={vector} alt="" onClick={ClickG}/></button>
+            <button className='carrousel-btn--D'><img src={vector} alt=""/></button>
+
+            </div>
+            
      )
    })}
     </div>
@@ -23,4 +32,4 @@ function Carroussel() {
         
 
 
-export default Carroussel
+export default Carrousel

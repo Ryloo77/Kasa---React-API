@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../../styles/Navigation.css'
+import '../../styles/layout/Navigation.css'
 function Navigation() {
     return (
             <nav className="header-nav">

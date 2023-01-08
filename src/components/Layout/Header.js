@@ -1,4 +1,4 @@
-import '../../styles/Header.css'
+import '../../styles/layout/Header.css'
 import logo from '../../assets/logo.png'
 import Navigation from './Navigation'
 function Header () {
