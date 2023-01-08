@@ -9,9 +9,13 @@ margin:  auto;
 
 .conteneur-apropos {
 position: relative;
-margin-bottom: 33px;
+background-color: #ffff;
 }
 
+.active .conteneur-apropos {
+    position: relative;
+    margin-bottom: 33px;
+    }
 
 .apropos-title{
     background-color: rgba(255, 96, 96, 1);
@@ -21,6 +25,12 @@ margin-bottom: 33px;
     font-size: 24px;
     margin: 0;
     border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.apropos-title:hover {
+    background-color: rgb(193, 79, 79);
 }
 
 .apropos-vector{
@@ -30,17 +40,45 @@ margin-bottom: 33px;
     right: 18px;
     top:15px;
     transform: rotateX(180deg);
+    transition: all 0.5s
+}
+
+.active .apropos-vector {
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    right: 18px;
+    top:15px;
+    transform: rotateX(0);
+    transition: all 0.5s;
 }
 
 .apropos-text{
+    height: 0;
+    opacity: 0;
     margin: 0;
+    visibility: hidden;
+    padding: 0px 18px 10px 18px;
+    color: rgba(255, 96, 96, 1);
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 34px;
+    transition: all 0.3s ease-in;
+}
+
+.active .apropos-text {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 33px;
     padding: 36px 18px 10px 18px;
     color: rgba(255, 96, 96, 1);
     background-color: #F7F7F7;
     border-radius: 5px;
     font-size: 24px;
     line-height: 34px;
-
+    transition: all 0.3s ease-in;
 }
 
 .montain{

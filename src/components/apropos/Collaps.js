@@ -7,7 +7,6 @@ function CollapsApropos() {
     return (
         <section className="apropos">
             
-
             {datas.map((data, index) => {
                 return (
                     <CardApropos key={index} title={data.title} contenu={data.contenu}/>     
