@@ -1,9 +1,13 @@
+.main{
+width: auto;
+}
 .conteneur{
     display: flex;
-    width: 1240px;
+    max-width: 1240px;
     overflow: hidden;
     position: relative;
     border-radius: 25px;
+    scroll-behavior: smooth;
 }
 
 .carrousel-btn--G{
@@ -11,9 +15,10 @@
     border: 0px;
     position: absolute;
     z-index: 2;
-    top:157px;
-    left:10px;
-    opacity: 0.2;
+    top:330px;
+    left:30px;
+    opacity: 0.4;
+    cursor: pointer;
     transition: all 1s;
 }
 .carrousel-btn--G:hover{
@@ -27,9 +32,10 @@
     position: absolute;
     transform: rotate(180deg);
     z-index: 2;
-    top:157px;
-    right:10px;
-    opacity: 0.2;
+    top:330px;
+    right:30px;
+    opacity: 0.4;
+    cursor: pointer;
     transition: all 1s;
 }
 
@@ -39,9 +45,11 @@
     }
 
 .carrousel-img {
-    min-width: 1240px;
+    position: relative;
+    left: 0;
+    width:1240px;
     height: 415px;
     object-fit: cover;
-    overflow: hidden;
     z-index: 0;
+    transition: all 1s ease-in-out;
 }

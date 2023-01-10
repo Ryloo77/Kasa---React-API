@@ -1,0 +1,36 @@
+.erreur {
+    width: 1240px;
+    margin: 0 auto 159px auto;
+    color: rgba(255,96,96,1);
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.erreur-title {
+    font-size: 288px; 
+    font-weight: 700;
+
+}
+
+.erreur-msg{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 182px;
+}
+
+.erreur-link{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(255,96,96,1);
+}
+
+.erreur-link:hover{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(255,96,96,1);
+    text-decoration-line: underline;
+}

@@ -3,7 +3,7 @@
 width: 1023px;
 display: flex;
 flex-direction: column;
-margin:  auto;
+margin: 0 auto 33px auto
 
 }
 
@@ -23,6 +23,7 @@ background-color: #ffff;
     height: 47px;
     color: #ffff;
     font-size: 24px;
+    font-weight: 500;
     margin: 0;
     border-radius: 5px;
     cursor: pointer;
