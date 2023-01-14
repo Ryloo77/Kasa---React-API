@@ -2,7 +2,7 @@ import vectorApropos from '../../../assets/vectorApropos.png'
 import '../../../styles/logement/CollapsLogement.css'
 import { useState } from 'react'
 
-export default function CardCollapsLogementRight(props) {
+export default function PorpsLogementRight(props) {
 
     const [active, setActive] = useState(false)
 

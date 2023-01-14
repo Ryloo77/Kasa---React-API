@@ -13,7 +13,11 @@
 
 .active {
     opacity: 1;
-    transition: all 0.5s ease-in
+    transition: all 0.5s ease-in;
+}
+
+.carrousel-btn--hidden {
+    display: none;
 }
 
 .carrousel-btn--G{
@@ -27,6 +31,9 @@
     cursor: pointer;
     transition: all 1s;
 }
+
+
+
 .carrousel-btn--G:hover{
     opacity: 1;
     transition: all 1s;
@@ -51,7 +58,26 @@
     }
 
 .carrousel-img {
+    position: relative;
     width: 1240px;
     object-fit: cover;
     border-radius: 25px;
+    z-index: 1;
+}
+.active .number-picture {
+    position: absolute;
+    display:block;
+    color: white;
+    font-weight: 500;
+    font-size:18px;
+    width: 24px;
+    height: 32px;
+    z-index: 3;
+    bottom: 10px;
+    left: 50%;
+
+}
+
+.number-picture {
+   display: none
 }

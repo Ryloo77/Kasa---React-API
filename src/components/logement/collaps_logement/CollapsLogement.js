@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom'
 
 
 
-function CollapsLogementLeft() {
+function CollapsLogement() {
 
     //useParams pour récupérer l'id du produit dans le params
     const { productId } = useParams()
@@ -25,4 +25,4 @@ function CollapsLogementLeft() {
                 
             }
 
-export default CollapsLogementLeft
+export default CollapsLogement

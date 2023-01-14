@@ -20,13 +20,14 @@ flex-direction: column;
     }
 
 .collaps-title{
+    position: relative;
     display: flex;
     align-items: center;
     background-color: rgba(255, 96, 96, 1);
     padding: 8px 18px;
+    width: 100%;
     height: 52px;
     color: #ffff;
-
     font-size: 18px;
     font-weight: 500;
     margin: 0;
@@ -42,22 +43,30 @@ flex-direction: column;
 .collaps-vector{
     width: 23px;
     height: 14px;
+    right: 20px;
     position: absolute;
-    right: 18px;
-    top:15px;
     transform: rotateX(180deg);
     transition: all 0.5s
 }
 
-.active .collaps-vector {
+.collaps-vector{
+    width: 23px;
+    height: 14px;
+    right: 20px;
+    position: absolute;
+    transform: rotateX(180deg);
+    transition: all 0.5s
+}
+
+.active .collaps-vector{
     width: 23px;
     height: 14px;
     position: absolute;
-    right: 18px;
-    top:15px;
     transform: rotateX(0);
     transition: all 0.5s;
 }
+
+
 
 .collaps-text{
     display: flex;
@@ -70,12 +79,13 @@ flex-direction: column;
     color: rgba(255, 96, 96, 1);
     background-color: #F7F7F7;
     border-radius: 5px;
-    font-size: 24px;
     line-height: 34px;
     transition: all 0.3s ease-in;
 }
 
 .active .collaps-text {
+    position: relative;
+    top:-10px;
     height: auto;
     opacity: 1;
     visibility: visible;
@@ -84,7 +94,7 @@ flex-direction: column;
     color: rgba(255, 96, 96, 1);
     background-color: #F7F7F7;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 34px;
     transition: all 0.3s ease-in;
 }
