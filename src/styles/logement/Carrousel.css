@@ -1,13 +1,19 @@
-.main{
-width: auto;
-}
-.conteneur{
+.conteneur, .slide{
     display: flex;
     max-width: 1240px;
-    overflow: hidden;
     position: relative;
+    height: 415px;
     border-radius: 25px;
-    scroll-behavior: smooth;
+}
+
+.slide{
+    opacity: 0;
+    transition: all 0.5s ease-in
+}
+
+.active {
+    opacity: 1;
+    transition: all 0.5s ease-in
 }
 
 .carrousel-btn--G{
@@ -15,8 +21,8 @@ width: auto;
     border: 0px;
     position: absolute;
     z-index: 2;
-    top:330px;
-    left:30px;
+    top:40%;
+    left:10px;
     opacity: 0.4;
     cursor: pointer;
     transition: all 1s;
@@ -32,8 +38,8 @@ width: auto;
     position: absolute;
     transform: rotate(180deg);
     z-index: 2;
-    top:330px;
-    right:30px;
+    top:40%;
+    right:10px;
     opacity: 0.4;
     cursor: pointer;
     transition: all 1s;
@@ -45,11 +51,7 @@ width: auto;
     }
 
 .carrousel-img {
-    position: relative;
-    left: 0;
-    width:1240px;
-    height: 415px;
+    width: 1240px;
     object-fit: cover;
-    z-index: 0;
-    transition: all 1s ease-in-out;
+    border-radius: 25px;
 }

@@ -1,0 +1,90 @@
+
+
+.conteneur-collaps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.collaps {
+    width: 582px;
+display: flex;
+flex-direction: column;
+
+
+}
+
+.active .conteneur-collaps {
+    position: relative;
+    margin-bottom: 33px;
+    }
+
+.collaps-title{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 96, 96, 1);
+    padding: 8px 18px;
+    height: 52px;
+    color: #ffff;
+
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.collaps-title:hover {
+    background-color: rgb(193, 79, 79);
+}
+
+.collaps-vector{
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    right: 18px;
+    top:15px;
+    transform: rotateX(180deg);
+    transition: all 0.5s
+}
+
+.active .collaps-vector {
+    width: 23px;
+    height: 14px;
+    position: absolute;
+    right: 18px;
+    top:15px;
+    transform: rotateX(0);
+    transition: all 0.5s;
+}
+
+.collaps-text{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+    visibility: hidden;
+    padding: 0px 18px 10px 18px;
+    color: rgba(255, 96, 96, 1);
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 34px;
+    transition: all 0.3s ease-in;
+}
+
+.active .collaps-text {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 33px;
+    padding: 36px 18px 53px 18px;
+    color: rgba(255, 96, 96, 1);
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 34px;
+    transition: all 0.3s ease-in;
+}

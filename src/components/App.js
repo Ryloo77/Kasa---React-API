@@ -16,7 +16,7 @@ function App() {
           <Route path="erreur" element={<ErrorPage/>} />
           <Route path="Apropos" element={<Apropos/>} />
           <Route path="/*" element={<ErrorPage/>} />
-          <Route path="fiche_logement/" element={<ErrorPage/>} />
+          <Route path="fiche_logement/*" element={<ErrorPage/>} />
         </Route>
       </Routes>
     </div>
