@@ -1,5 +1,5 @@
 .header {
-    margin: 40px auto 63px auto;
+    margin: 40px auto 20px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,6 +8,6 @@
 }
 
 .header-logo{
-    width: 210.32px;
+    width: 210px;
     height: 68px;
 }

@@ -2,7 +2,7 @@ import vectorApropos from '../../../assets/vectorApropos.png'
 import '../../../styles/logement/CollapsLogement.css'
 import { useState } from 'react'
 
-export default function PorpsLogementRight(props) {
+export default function PorpsLogementRight(props, index) {
 
     const [active, setActive] = useState(false)
 
@@ -10,7 +10,7 @@ export default function PorpsLogementRight(props) {
         setActive(!active)
     }
     return (
-            <div className={`collaps ${active && "active"}`}>
+            <div  className={`collaps ${active && "active"}`}>
                 <h2 className="collaps-title" onClick={handToggle}>Equipements
                 <img src={vectorApropos} alt="vector" className="collaps-vector"/>
                 </h2>
@@ -18,7 +18,7 @@ export default function PorpsLogementRight(props) {
 
                 {props.equipement.map((listEquipement) => { 
                 return (
-                    <p className="collaps-equipement--text">{listEquipement}</p>  
+                    <p key ={listEquipement[0] + {index}} className="collaps-equipement--text">{listEquipement}</p>  
                 ) 
                 }
                 )}
