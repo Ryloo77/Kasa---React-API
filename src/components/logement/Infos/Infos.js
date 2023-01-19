@@ -3,13 +3,13 @@ import PropsInfos from './PropsInfos'
 import { products } from '../../../models/Products'
 import { useParams } from 'react-router-dom'
 
-const Infos = (index) => {
+const Infos = () => {
 
 
 
   const { productId } = useParams()
   const product = products.find((product) => product.id === productId)
-  console.log (product)
+
   return ( 
  
     <PropsInfos 
@@ -18,7 +18,7 @@ const Infos = (index) => {
     tag={product.tags} 
     hostName={product.host.name} 
     hostPicture={product.host.picture} 
-    stars={product.rating}/>
+    const stars={product.rating}/>
      )
 
 

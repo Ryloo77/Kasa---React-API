@@ -98,3 +98,21 @@ flex-direction: column;
     line-height: 34px;
     transition: all 0.3s ease-in;
 }
+
+@media screen and (min-width:769px) and (max-width: 1239px){
+    .collaps{
+        margin: 2px;
+
+    }
+    }
+
+    @media screen and (max-width:768px) {
+        .conteneur-collaps{
+            flex-direction: column;
+            width: 100%;
+        }
+        .collaps{
+            width: 100%;
+            margin-top: 20px;
+        }
+    }

@@ -1,5 +1,11 @@
 .logement {
     margin: auto;
-    width: 1240px;
+    max-width: 1240px;
     margin-bottom: 30px;
 }
+
+@media screen and  (max-width: 1239px){
+    .logement{
+        margin: 20px;
+    }
+    }

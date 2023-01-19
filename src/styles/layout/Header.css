@@ -1,13 +1,20 @@
-.header {
-    margin: 40px auto 20px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1240px;
-    height: 68px;
+ .header {
+        padding: 0;
+        margin: 40px auto 20px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1240px;
+        height: 68px;
 }
 
 .header-logo{
     width: 210px;
     height: 68px;
+}
+
+@media screen and  (max-width: 1239px){
+.header{
+    margin: 20px;
+}
 }

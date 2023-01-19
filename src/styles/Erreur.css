@@ -1,5 +1,5 @@
 .erreur {
-    width: 1240px;
+    max-width: 1240px;
     margin: 0 auto 159px auto;
     color: rgba(255,96,96,1);
     text-align: center;
@@ -34,3 +34,9 @@
     color: rgba(255,96,96,1);
     text-decoration-line: underline;
 }
+
+@media screen and  (max-width: 1239px){
+    .erreur{
+        margin: 20px;
+    }
+    }

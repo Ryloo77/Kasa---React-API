@@ -1,22 +1,28 @@
 .section1 {
     max-width: 1240px;
     height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section1-img {
     max-width: 100%;
-    position: absolute;
     object-fit: cover;
 }
 
 .section1-text {
-    margin: 78px 262px 77px 273px;
+
     position: absolute;
-    font-size: 48px;
+    font-size: 3vw;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     color: #FFFF;
-
-
 }
+
+@media screen and  (max-width: 1239px){
+    .section1, {
+        margin:20px;
+    }
+    }

@@ -12,6 +12,7 @@
 }
 
 .active {
+    width: 100%;
     opacity: 1;
     transition: all 0.5s ease-in;
 }
@@ -81,3 +82,18 @@
 .number-picture {
    display: none
 }
+
+@media screen and (min-width:769px) and (max-width: 1239px){
+    .carrousel{
+        margin: 20px;
+    }
+    }
+
+    @media screen and (max-width:768px) {
+        .slide .active{
+            max-width: 760px;
+        }
+        .carrousel-img{
+            width: 100%;
+        }
+    }

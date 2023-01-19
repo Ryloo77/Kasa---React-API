@@ -1,5 +1,5 @@
-import { products } from '../../../models/Products'
-import ErrorPage from '../../../pages/Erreur'
+import { products } from '../../models/Products'
+import ErrorPage from '../../pages/Erreur'
 import { useParams, Routes, Route } from 'react-router-dom'
 
 
