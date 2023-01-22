@@ -1,4 +1,5 @@
 .section1 {
+    font-weight: 500;
     max-width: 1240px;
     height: 223px;
     display: flex;
@@ -9,6 +10,8 @@
 .section1-img {
     max-width: 100%;
     object-fit: cover;
+    min-height: 111px;
+    border-radius: 10px;
 }
 
 .section1-text {
@@ -21,8 +24,24 @@
     color: #FFFF;
 }
 
-@media screen and  (max-width: 1239px){
-    .section1, {
-        margin:20px;
+@media screen and  (min-width:769px) and (max-width: 1239px){
+    .section1 {
+        min-height: 111px;
+        height: auto;
     }
+    }
+
+    @media screen and  (max-width:768px){
+        .section1{
+            min-width: 335px; 
+            height: auto;
+        }
+
+
+        .section1-text{
+            margin: 20px 20px;
+            max-width: 300px;
+            font-size: 24px;
+
+        }
     }

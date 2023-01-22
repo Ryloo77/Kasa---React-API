@@ -20,3 +20,8 @@ top:66px
     top: 134px;
 }
 
+@media screen and (max-width:768px){
+    .footer-text{
+        font-size: 12px;
+    }
+}

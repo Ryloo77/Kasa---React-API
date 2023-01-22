@@ -40,3 +40,23 @@
         margin: 20px;
     }
     }
+
+@media screen and (max-width: 768px){
+    .erreur {
+        margin: 150px auto;
+    }
+    .erreur-title{
+        font-size: 96px;
+    }
+
+    .erreur-msg{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 100px;
+        padding: 10px;
+    }
+
+    .erreur-link{
+        font-size: 14px;
+    }
+}

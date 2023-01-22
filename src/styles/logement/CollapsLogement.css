@@ -110,9 +110,39 @@ flex-direction: column;
         .conteneur-collaps{
             flex-direction: column;
             width: 100%;
+            margin-top: 0;
+
         }
         .collaps{
             width: 100%;
             margin-top: 20px;
+        }
+
+        .collaps-title{
+            font-size: 13px;
+            font-weight: 400;
+            height: 30px;
+            border-radius: 5px;
+        }
+
+        .collaps-vector{
+            height: 9px;
+            width: 15px;
+        }
+        .active .collaps-vector{
+            height: 9px;
+            width: 15px;
+        }
+
+        .collaps-text{
+            font-size: 0;
+            line-height: 10px;
+        }
+        .active .collaps-text{
+            font-size: 12px;
+            line-height: 20px;
+            padding: 20px 10px 5px 10px;
+            margin-bottom: 0;
+
         }
     }

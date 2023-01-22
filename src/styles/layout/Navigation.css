@@ -1,5 +1,6 @@
 .header-nav {
     width: 309px;
+    font-weight: 500;
     height: 34px;
     top: 17px;
     display: flex;
@@ -19,3 +20,17 @@
 .header-nav--link:hover{
     text-decoration: underline;
 }
+
+@media screen  and (max-width: 768px){
+    .header-nav{
+        height: 17px;
+        width: 140px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-nav--link{
+        font-size: 12px;
+        text-transform:uppercase;
+    }
+    }

@@ -37,8 +37,9 @@
     background-color: #ff6060;
     color: white;
     font-size: 14px;
+    font-weight: 400;
     padding: 0;
-    width: 200px;
+    width: 180px;
     height: 25px;
     border-radius: 10px;
 }
@@ -67,49 +68,82 @@
     top: 0;
     right: 0;
 }
-
+.star {
+    padding-right: 5px;
+}
 .info-stars--list,
 ul {
     position: absolute;
     width: 100%;
     bottom: 0;
     justify-content: right;
-    height: 32px;
+    height: 30px;
     display: flex;
     list-style: none;
 }
 
 
-@media screen and (min-width:769px) and (max-width: 1239px) {
-    .montain {
-        margin: 20px;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .info {
         flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .info-title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .info-localisation {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .info-plus{
+        margin-top: 10px;
+    }
+
+    .info-plus--unique{
+        font-size: 14px;
+        height: auto;
+        text-align: center;
+        padding: 2px;
+        border-radius: 5px;
     }
 
     .infoleft {
         width: 100%;
     }
 
-
     .inforight {
         height: 33px;
-        margin: 20px 0;
+        margin: 10px 0;
         width: 100%;
         justify-content: space-between;
     }
+    .host-name{
+        font-size: 12px;
+        width: 60px;
+        right: 50px;
+    }
 
+    .host-picture{
+        width: 32px;
+        height: 32px;
+        top: 10px;
+
+    }
     .info-stars--list,
     ul {
-        padding: 20px 0;
-
+        padding: 15px 0;
         justify-content: left;
-        height: 32px;
     }
+
+    .star{
+        width: 20px;
+    }
+
 
 
 }

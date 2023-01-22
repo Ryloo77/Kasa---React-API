@@ -9,7 +9,7 @@ function CardList () {
         <main className="cardlist">
         {products.map((product) => {
            return (
-            <Link key={product.id} to={`/fiche_logement/${product.id}`}>
+            <Link className="cardlist-link" key={product.id} to={`/fiche_logement/${product.id}`}>
                <Card  title={product.title} cover={product.cover} />     
             </Link>
                
