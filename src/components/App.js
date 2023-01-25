@@ -6,7 +6,7 @@ import Apropos from '../pages/Apropos'
 import '../styles/App.css'
 import Layout from './Layout/Layout';
 
-function App() {
+function App () {
   return (
     <div className='App'>
       <Routes>

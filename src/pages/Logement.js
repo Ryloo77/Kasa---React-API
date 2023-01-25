@@ -3,7 +3,7 @@ import '../styles/logement/Logement.css'
 import { products } from '../models/Products'
 import ErrorPage from './Erreur'
 import Carrousel from '../components/logement/carrousel/Carrousel'
-import CollapseLogement from '../components/logement/collaps_logement/CollapsLogement'
+import CollapsLogement from '../components/logement/infos_logement/CollapsLogement'
 import Infos from '../components/logement/Infos/Infos'
 import { useParams, Routes, Route } from 'react-router-dom'
 
@@ -27,7 +27,7 @@ function Logement (){
         <div className='logement'>
         <Carrousel/>
         <Infos/>
-        <CollapseLogement/>     
+        <CollapsLogement/>     
         </div>
     )
 }

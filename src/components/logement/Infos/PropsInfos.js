@@ -8,7 +8,7 @@ const PropsInfos = (props) => {
         <div className="info-plus">
           {props.tag.map((listTag, index) => {
             return (
-              <li key={listTag + { index }} className="info-plus--unique">{listTag}</li>
+              <li key={index} className="info-plus--unique">{listTag}</li>
             )
           }
           )}
