@@ -4,9 +4,42 @@
     margin-bottom: 30px;
 }
 
+.conteneur-props{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.conteneur-props--left{
+    max-width: 48%;
+}
+
+.conteneur-props--right{
+    width: 48%;
+}
+
 @media screen and  (max-width: 1239px){
     .logement{
         margin: 20px;
     }
+}
+
+    @media screen and (max-width:768px) {
+
+        .conteneur-props{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .conteneur-props--left{
+            max-width: 100%;
+        }
+        
+        .conteneur-props--right{
+            width: 100%;
+        }
+        
+
 
     }

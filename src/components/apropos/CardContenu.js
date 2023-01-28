@@ -1,4 +1,4 @@
-import '../../styles/logement/Collaps.css'
+import '../../styles/Collaps.css'
 import '../../styles/a_propos/Apropos.css'
 //import Collaps from '../Collaps/Collaps'
 import PropsApropos from './PropsApropos'

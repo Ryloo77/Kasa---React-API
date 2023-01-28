@@ -1,10 +1,7 @@
 .collaps {
     width: 80%;
 }
-.conteneur-props{
-    display: flex;
-    width: 100%;
-}
+
 .conteneur-collaps {
     position: relative;
     display: flex;
@@ -14,13 +11,7 @@
     z-index: 0;
 }
 
-.conteneur-collaps--left{
-    max-width: 48%;
-}
 
-.conteneur-collaps--right{
-    width: 48%;
-}
 
 .active .conteneur-collaps {
     position: relative;
@@ -50,10 +41,13 @@
 }
 
 .collaps-vector{
-    width: 23px;
-    height: 14px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
     right: 10px;
-    top: 10px;
+    top: 5px;
     position: absolute;
     z-index: 2;
     transform: rotateX(180deg);
@@ -62,8 +56,8 @@
 
 
 .active .collaps-vector{
-    width: 23px;
-    height: 14px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     transform: rotateX(0);
     transition: all 0.5s;
@@ -93,7 +87,6 @@
     height: auto;
     opacity: 1;
     visibility: visible;
-    margin-bottom: 33px;
     padding: 36px 18px 53px 18px;
     color: rgba(255, 96, 96, 1);
     background-color: #F7F7F7;
@@ -112,11 +105,6 @@
 
     @media screen and (max-width:768px) {
 
-        .conteneur-props{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
         .conteneur-collaps{
             flex-direction: column;
             width: 100%;
@@ -128,14 +116,6 @@
             margin-top: 20px;
         }
 
-        .conteneur-collaps--left{
-            max-width: 100%;
-        }
-        
-        .conteneur-collaps--right{
-            width: 100%;
-        }
-        
 
         .collaps-title{
             font-size: 13px;
@@ -147,10 +127,17 @@
         .collaps-vector{
             height: 9px;
             width: 15px;
+            top:10px;
         }
         .active .collaps-vector{
             height: 9px;
             width: 15px;
+        
+        }
+
+        .vector{
+            width: 23px;
+            height: 12px;
         }
 
         .collaps-text{

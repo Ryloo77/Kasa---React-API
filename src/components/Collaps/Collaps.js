@@ -1,5 +1,5 @@
 import vectorApropos from '../../assets/vectorApropos.png'
-import '../../styles/logement/Collaps.css'
+import '../../styles/Collaps.css'
 import { useState } from 'react'
 
 function Collaps(props) {
@@ -10,9 +10,13 @@ function Collaps(props) {
         setActive(!active)
     }
     return (
+        <div className='onClick-collaps' onClick={handToggle}>
             <div className={`conteneur-collaps ${active && "active"}`}> 
-                <img src={vectorApropos} alt="vector" className="collaps-vector" onClick={handToggle}/>
-                {props.children}     
+                <div className="collaps-vector">
+                <img src={vectorApropos} alt="vector" className="vector" onClick={handToggle}/>
+                </div> 
+                {props.children}         
+          </div>
           </div>
 
     )

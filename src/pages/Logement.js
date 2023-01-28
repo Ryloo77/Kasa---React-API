@@ -5,7 +5,7 @@ import ErrorPage from './Erreur'
 import Carrousel from '../components/logement/carrousel/Carrousel'
 import CollapsLogement from '../components/logement/infos_logement/CollapsLogement'
 import Infos from '../components/logement/Infos/Infos'
-import { useParams, Routes, Route } from 'react-router-dom'
+import { useParams} from 'react-router-dom'
 
 
 function Logement (){
@@ -16,9 +16,7 @@ function Logement (){
 
     if (!product) {
         return (
-            <Routes>
-                <Route path="/*" element={<ErrorPage />} />
-            </Routes>
+            <ErrorPage/>
         )
     }
 

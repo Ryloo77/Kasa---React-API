@@ -1,5 +1,5 @@
 
-import ImageSlider from './ImageSlider'
+import Slideshow from './Slideshow'
 
 
 
@@ -9,7 +9,7 @@ function Carrousel() {
 
 
     return (
-        <ImageSlider />
+        <Slideshow />
     )
 }
 
