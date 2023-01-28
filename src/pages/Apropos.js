@@ -1,5 +1,4 @@
 import CardContenu from '../components/apropos/CardContenu'
-//import Collaps from '../components/apropos/Collaps'
 import Montain from '../components/apropos/moutainImg'
 
 function Apropos () {
