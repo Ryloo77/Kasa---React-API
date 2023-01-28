@@ -13,7 +13,7 @@ function Collaps(props) {
         <div className='onClick-collaps' onClick={handToggle}>
             <div className={`conteneur-collaps ${active && "active"}`}> 
                 <div className="collaps-vector">
-                <img src={vectorApropos} alt="vector" className="vector" onClick={handToggle}/>
+                <img src={vectorApropos} alt="vector" className="vector"/>
                 </div> 
                 {props.children}         
           </div>
