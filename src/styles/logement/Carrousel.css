@@ -1,4 +1,5 @@
-.conteneur, .slide{
+.conteneur,
+.slide {
     display: flex;
     max-width: 1240px;
     position: relative;
@@ -6,7 +7,7 @@
     border-radius: 25px;
 }
 
-.slide{
+.slide {
     opacity: 0;
     transition: all 0.5s ease-in
 }
@@ -21,13 +22,13 @@
     display: none;
 }
 
-.carrousel-btn--G{
-    background-color: rgba(0,0,0,0);
+.carrousel-btn--G {
+    background-color: rgba(0, 0, 0, 0);
     border: 0px;
     position: absolute;
     z-index: 2;
-    top:40%;
-    left:10px;
+    top: 40%;
+    left: 10px;
     opacity: 0.4;
     cursor: pointer;
     transition: all 1s;
@@ -35,28 +36,28 @@
 
 
 
-.carrousel-btn--G:hover{
+.carrousel-btn--G:hover {
     opacity: 1;
     transition: all 1s;
-    }
+}
 
-.carrousel-btn--D{
-    background-color: rgba(0,0,0,0);
+.carrousel-btn--D {
+    background-color: rgba(0, 0, 0, 0);
     border: 0px;
     position: absolute;
     transform: rotate(180deg);
     z-index: 2;
-    top:40%;
-    right:10px;
+    top: 40%;
+    right: 10px;
     opacity: 0.4;
     cursor: pointer;
     transition: all 1s;
 }
 
-.carrousel-btn--D:hover{
+.carrousel-btn--D:hover {
     opacity: 1;
     transition: all 1s;
-    }
+}
 
 .carrousel-img {
     position: relative;
@@ -65,12 +66,13 @@
     border-radius: 25px;
     z-index: 1;
 }
+
 .active .number-picture {
     position: absolute;
-    display:block;
+    display: block;
     color: white;
     font-weight: 500;
-    font-size:18px;
+    font-size: 18px;
     width: 24px;
     height: 32px;
     z-index: 3;
@@ -80,20 +82,21 @@
 }
 
 .number-picture {
-   display: none
+    display: none
 }
 
-@media screen and (min-width:769px) and (max-width: 1239px){
-    .carrousel{
+@media screen and (min-width:769px) and (max-width: 1239px) {
+    .carrousel {
         margin: 20px;
     }
+}
+
+@media screen and (max-width:768px) {
+    .slide .active {
+        max-width: 760px;
     }
 
-    @media screen and (max-width:768px) {
-        .slide .active{
-            max-width: 760px;
-        }
-        .carrousel-img{
-            width: 100%;
-        }
+    .carrousel-img {
+        width: 100%;
     }
+}

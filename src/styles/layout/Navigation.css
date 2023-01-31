@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-.header-nav--link{
+.header-nav--link {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 24px;
@@ -17,20 +17,20 @@
     text-decoration: none;
 }
 
-.header-nav--link:hover{
+.header-nav--link:hover {
     text-decoration: underline;
 }
 
-@media screen  and (max-width: 768px){
-    .header-nav{
+@media screen and (max-width: 768px) {
+    .header-nav {
         height: 17px;
         width: 140px;
         display: flex;
         flex-wrap: wrap;
     }
 
-    .header-nav--link{
+    .header-nav--link {
         font-size: 12px;
-        text-transform:uppercase;
+        text-transform: uppercase;
     }
-    }
+}

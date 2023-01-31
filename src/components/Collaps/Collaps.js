@@ -20,7 +20,6 @@ function Collaps(props) {
         </div>
 
     )
-
 }
 
 export default Collaps

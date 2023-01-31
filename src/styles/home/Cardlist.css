@@ -1,4 +1,4 @@
-.cardlist{
+.cardlist {
     margin-top: 43px;
     display: flex;
     justify-content: space-around;
@@ -7,13 +7,13 @@
     border-radius: 25px;
 }
 
-@media screen and  (max-width:768px){
-    .cardlist{
+@media screen and (max-width:768px) {
+    .cardlist {
         margin-top: 20px;
         background-color: white;
     }
 
-    .cardlist-link{
+    .cardlist-link {
         width: 100%;
     }
 }

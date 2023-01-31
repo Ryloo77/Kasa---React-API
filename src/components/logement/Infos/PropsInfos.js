@@ -14,7 +14,6 @@ const PropsInfos = (props) => {
           )}
         </div>
 
-
       </div>
       <div className="inforight">
         <div className="host">
@@ -24,12 +23,8 @@ const PropsInfos = (props) => {
             {Starfunction()}
           </div>
         </div>
-
       </div>
-
     </div>
-
-
 
   )
 }

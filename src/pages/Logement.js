@@ -5,25 +5,25 @@ import ErrorPage from './Erreur'
 import Carrousel from '../components/logement/carrousel/Carrousel'
 import CollapsLogement from '../components/logement/infos_logement/CollapsLogement'
 import Infos from '../components/logement/Infos/Infos'
-import { useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 
-function Logement (){
+function Logement() {
 
-    const  {productId} = useParams()
+    const { productId } = useParams()
     const product = products.find((product) => product.id === productId)
 
     if (!product) {
         return (
-            <ErrorPage/>
+            <ErrorPage />
         )
     }
 
     return (
         <div className='logement'>
-        <Carrousel/>
-        <Infos/>
-        <CollapsLogement/>     
+            <Carrousel />
+            <Infos />
+            <CollapsLogement />
         </div>
     )
 }
