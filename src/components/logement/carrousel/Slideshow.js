@@ -32,8 +32,6 @@ function ImageSlider() {
             {product.pictures.map((picture, index) => {
                 return (
                     <div key={index} className={index === current ? "slide active" : "slide"}>
-                        {console.log(index)}
-                        {console.log(current)}
                         {/*si l'index (position de l'image dans le tableau) est égale au current (image actuel), alors tu me retournes l'image correspondante*/}
                         {index === current && (<PropsCarr picture={picture} />)}
                         <p className={index === current ? "number-picture active" : "number-picture"}>
