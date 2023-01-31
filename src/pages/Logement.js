@@ -10,8 +10,7 @@ import { useParams} from 'react-router-dom'
 
 function Logement (){
 
-    const { productId } = useParams()
-    //récupération du produit appelé égal à l'id du "params"
+    const  {productId} = useParams()
     const product = products.find((product) => product.id === productId)
 
     if (!product) {
@@ -19,7 +18,6 @@ function Logement (){
             <ErrorPage/>
         )
     }
-
 
     return (
         <div className='logement'>

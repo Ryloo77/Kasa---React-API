@@ -10,9 +10,10 @@ function CardContenu() {
         <section className='apropos-info'>
             {datas.map((data, index) => {
                 return (
-                    <Collaps>
-                    <PropsApropos key={index} title={data.title} contenu={data.contenu}/>  
+                    <Collaps key={index}>
+                    <PropsApropos key={index} title={data.title} contenu={data.contenu} />  
                     </Collaps>
+                    
                        
             )
 

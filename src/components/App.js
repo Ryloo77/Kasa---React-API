@@ -4,7 +4,7 @@ import Logement from '../pages/Logement';
 import ErrorPage from '../pages/Erreur';
 import Apropos from '../pages/Apropos'
 import '../styles/App.css'
-import Layout from './Layout/Layout';
+import Layout from '../pages/Layout';
 
 function App () {
 

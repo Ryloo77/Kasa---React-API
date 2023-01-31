@@ -2,7 +2,6 @@ import '../../styles/home/Cardlist.css'
 import Card from './Card'
 import {products} from '../../models/Products'
 import { Link } from 'react-router-dom'
-
 function CardList () {
 
      return (

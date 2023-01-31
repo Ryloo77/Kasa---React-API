@@ -11,13 +11,13 @@ function Collaps(props) {
     }
     return (
         <div className='onClick-collaps' onClick={handToggle}>
-            <div className={`conteneur-collaps ${active && "active"}`}> 
+            <div className={`conteneur-collaps ${active && "active"}`}>
                 <div className="collaps-vector">
-                <img src={vectorApropos} alt="vector" className="vector"/>
-                </div> 
-                {props.children}         
-          </div>
-          </div>
+                    <img src={vectorApropos} alt="vector" className="vector" />
+                </div>
+                {props.children}
+            </div>
+        </div>
 
     )
 
