@@ -4,8 +4,6 @@ import { useParams } from 'react-router-dom'
 import Collaps from '../../Collaps/Collaps'
 
 
-
-
 function CollapsLogement() {
 
         //useParams pour récupérer l'id du produit dans le params
@@ -15,14 +13,13 @@ function CollapsLogement() {
 
         return (
                 <div className='conteneur-props'>
-                        <div className='conteneur-props--left'>
-                                <Collaps key={1} content={product.description} title="description"/>
+                        <div className='conteneur-props--description'>
+                                <Collaps content={product.description} title="description"/>
                         </div>
            
 
-                        <div className='conteneur-props--right'>
-                                <Collaps key={2} content={product.equipments} title="équipement"/>
-
+                        <div className='conteneur-props--equipments'>
+                                <Collaps content={product.equipments} title="équipement"/>
                         </div>
                 </div>
         )

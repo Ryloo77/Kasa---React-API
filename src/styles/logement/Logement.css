@@ -10,11 +10,11 @@
     width: 100%;
 }
 
-.conteneur-props--left {
+.conteneur-props--description {
     max-width: 48%;
 }
 
-.conteneur-props--right {
+.conteneur-props--equipments{
     width: 48%;
 }
 
@@ -32,11 +32,11 @@
         width: 100%;
     }
 
-    .conteneur-props--left {
+    .conteneur-props--description {
         max-width: 100%;
     }
 
-    .conteneur-props--right {
+    .conteneur-props--equipments {
         width: 100%;
     }
 
