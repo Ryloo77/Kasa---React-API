@@ -15,10 +15,12 @@ function ImageSlider() {
     const length = slides.length;
 
     const prevSlide = () => {
+        //si on est sur l'image 0, tu me renvoi l'image de fin (0-1 = dernière image), sinon tu décrémentes de -1
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
     
     const nextSlide = () => {
+        // si on est sur l'image de fin (0-1= dernière image), tu reviens à l'image 0, sinon tu incrémentes de 1
         setCurrent(current === length - 1 ? 0 : current + 1)
     }
 
@@ -30,6 +32,9 @@ function ImageSlider() {
             {product.pictures.map((picture, index) => {
                 return (
                     <div key={index} className={index === current ? "slide active" : "slide"}>
+                        {console.log(index)}
+                        {console.log(current)}
+                        {/*si l'index de l'image est égale au current (image actuel), alors tu me retourne l'image correspondante*/}
                         {index === current && (<PropsCarr picture={picture} />)}
                         <p className={index === current ? "number-picture active" : "number-picture"}>
                             <span>{length === 1 ? "" : index + 1 + "/" + length}</span>
