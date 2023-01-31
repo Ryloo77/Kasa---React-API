@@ -50,11 +50,12 @@
     }
 
     .main-apropos {
-        padding: 10px;
+        padding: 10px
     }
 
     .apropos-info {
         width: 100%;
+        margin-bottom: 0;
     }
 }
 

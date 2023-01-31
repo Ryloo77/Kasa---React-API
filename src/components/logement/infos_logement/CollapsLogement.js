@@ -1,6 +1,4 @@
 import { products } from '../../../models/Products'
-import PropsLogementLeft from './PropsLogementLeft'
-import PropsLogementRight from './PropsLogementRight'
 import '../../../styles/Collaps.css'
 import { useParams } from 'react-router-dom'
 import Collaps from '../../Collaps/Collaps'
@@ -18,14 +16,13 @@ function CollapsLogement() {
         return (
                 <div className='conteneur-props'>
                         <div className='conteneur-props--left'>
-                                <Collaps>
-                                        <PropsLogementLeft description={product.description} />
-                                </Collaps>
+                                <Collaps key={1} content={product.description} title="description"/>
                         </div>
+           
+
                         <div className='conteneur-props--right'>
-                                <Collaps>
-                                        <PropsLogementRight equipement={product.equipments} />
-                                </Collaps>
+                                <Collaps key={2} content={product.equipments} title="équipement"/>
+
                         </div>
                 </div>
         )
