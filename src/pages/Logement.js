@@ -3,7 +3,7 @@ import '../styles/logement/Logement.css'
 import { products } from '../models/Products'
 import ErrorPage from './Erreur'
 import Carrousel from '../components/logement/carrousel/Carrousel'
-import CollapsLogement from '../components/logement/infos_logement/CollapsLogement'
+import CollapsLogement from '../components/logement/infos_collaps_logement/CollapsLogement'
 import Infos from '../components/logement/Infos/Infos'
 import { useParams } from 'react-router-dom'
 
