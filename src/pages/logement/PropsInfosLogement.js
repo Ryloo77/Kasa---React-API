@@ -1,4 +1,4 @@
-import Starfunction from "../StarNotation"
+import Starfunction from "../../components/StarNotation"
 function PropsInfosLogement(props) {
   return (
 

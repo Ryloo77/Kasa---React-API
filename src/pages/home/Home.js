@@ -1,10 +1,10 @@
-import sectionImg from '../assets/sectionImg.png'
-import PropsCard from '../components/props_products/PropsCard'
-import { products } from '../models/Products'
+import sectionImg from '../../assets/sectionImg.png'
+import PropsCard from './PropsCard'
+import { products } from '../../models/Products'
 import { Link } from 'react-router-dom'
-import '../styles/home/Section1.css'
-import '../styles/home/Home.css'
-import '../styles/home/Cardlist.css'
+import '../../styles/home/Section1.css'
+import '../../styles/home/Home.css'
+import '../../styles/home/Cardlist.css'
 
 function Home() {
     return (

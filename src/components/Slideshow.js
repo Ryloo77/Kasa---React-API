@@ -1,4 +1,3 @@
-import PropsCarrousel from './props_products/PropsCarrousel'
 import vector from '../assets/vector.png'
 import { products } from '../models/Products'
 import { useState } from 'react'
@@ -37,7 +36,7 @@ function Slideshow() {
                 return (
                     <div key={index} className={index === current ? "slide active" : "slide"}>
                         {/*si l'index (position de l'image dans le tableau) est égale au current (image actuel), alors tu me retournes l'image correspondante*/}
-                        {index === current && (<PropsCarrousel picture={picture} />)}
+                        {index === current && <img src={picture} alt="logement_picture" className="carrousel-img" />}
                         <p className={index === current ? "number-picture active" : "number-picture"}>
                             <span>{length === 1 ? "" : index + 1 + "/" + length}</span>
                         </p>

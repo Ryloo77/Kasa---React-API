@@ -1,16 +1,16 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { products } from '../models/Products'
-import PropsInfosLogement from '../components/props_products/PropsInfosLogement'
-import Slideshow from '../components/Slideshow'
-import ErrorPage from './Erreur'
-import Collaps from '../components/Collaps'
-import '../styles/logement/Logement.css'
-import '../styles/logement/Infos.css'
+import { products } from '../../models/Products'
+import PropsInfosLogement from './PropsInfosLogement'
+import Slideshow from '../../components/Slideshow'
+import ErrorPage from '../Erreur'
+import Collaps from '../../components/Collaps'
+import '../../styles/logement/Logement.css'
+import '../../styles/logement/Infos.css'
 
 
 
-function Logement() {
+function Logement(props) {
 
     const { productId } = useParams()
     const product = products.find((product) => product.id === productId)
@@ -25,7 +25,8 @@ function Logement() {
         <main>
 
             <div className='logement'>
-                <Slideshow />
+                <Slideshow><img src={props.picture} alt="logement_picture" className="carrousel-img" /></Slideshow>
+                
 
                 <PropsInfosLogement
                     title={product.title}
