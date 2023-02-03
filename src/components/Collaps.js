@@ -1,5 +1,5 @@
-import vectorApropos from '../../assets/vectorApropos.png'
-import '../../styles/Collaps.css'
+import vectorApropos from '../assets/vectorApropos.png'
+import '../styles/Collaps.css'
 import { useState } from 'react'
 
 function Collaps(props) {

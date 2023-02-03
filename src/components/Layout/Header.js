@@ -1,12 +1,17 @@
 import '../../styles/layout/Header.css'
 import logo from '../../assets/logo.png'
-import Navigation from './Navigation'
+import '../../styles/layout/Navigation.css'
 import { Link } from 'react-router-dom'
 function Header() {
     return (
         <header className="header">
             <Link to={"/"}><img src={logo} alt="kasa" className='header-logo' /></Link>
-            <Navigation />
+
+            <nav className="header-nav">
+                <Link className='header-nav--link' to="/">Accueil</Link>
+                <Link className='header-nav--link' to="Apropos">A propos</Link>
+            </nav>
+
         </header>
     )
 }

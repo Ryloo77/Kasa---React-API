@@ -1,11 +1,13 @@
 import React from 'react'
-import '../styles/logement/Logement.css'
-import { products } from '../models/Products'
-import ErrorPage from './Erreur'
-import Carrousel from '../components/logement/carrousel/Carrousel'
-import CollapsLogement from '../components/logement/infos_collaps_logement/CollapsLogement'
-import Infos from '../components/logement/Infos/Infos'
 import { useParams } from 'react-router-dom'
+import { products } from '../models/Products'
+import PropsInfosLogement from '../components/props_products/PropsInfosLogement'
+import Slideshow from '../components/Slideshow'
+import ErrorPage from './Erreur'
+import Collaps from '../components/Collaps'
+import '../styles/logement/Logement.css'
+import '../styles/logement/Infos.css'
+
 
 
 function Logement() {
@@ -20,11 +22,34 @@ function Logement() {
     }
 
     return (
-        <div className='logement'>
-            <Carrousel />
-            <Infos />
-            <CollapsLogement />
-        </div>
+        <main>
+
+            <div className='logement'>
+                <Slideshow />
+
+                <PropsInfosLogement
+                    title={product.title}
+                    location={product.location}
+                    tag={product.tags}
+                    hostName={product.host.name}
+                    hostPicture={product.host.picture}
+                    const stars={product.rating} />
+
+                <div className='conteneur-props'>
+                    <div className='conteneur-props--description'>
+                        <Collaps content={product.description} title="description" />
+                    </div>
+
+
+                    <div className='conteneur-props--equipments'>
+                        <Collaps content={product.equipments} title="équipement" />
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+
     )
 }
 
